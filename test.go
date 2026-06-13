@@ -33,6 +33,8 @@ func main() {
 	var pilihan int
 	var selesai bool = false
 
+	dummyData()
+
 	for !selesai {
 		fmt.Println("\n")
 		fmt.Println("APLIKASI PEMESANAN TIKET BIOSKOP")
@@ -363,4 +365,65 @@ func listFilm(info *arrFilm, n int) {
 func filmPalingLaris(info arrFilm) {
 	fmt.Printf("Film paling laris dengan %d penonton:\n", info[0].Penonton)
 	fmt.Printf("%s | %s | %d menit\n", info[0].Judul, info[0].Genre, info[0].Durasi)
+}
+
+func dummyData() {
+	tabFilm[0] = Film{
+		ID:       1,
+		Judul:    "Avatar",
+		Genre:    "Action",
+		Durasi:   162,
+		Penonton: 120,
+	}
+	tabFilm[1] = Film{
+		ID:       2,
+		Judul:    "Titanic",
+		Genre:    "Drama",
+		Durasi:   195,
+		Penonton: 100,
+	}
+	tabFilm[2] = Film{
+		ID:       3,
+		Judul:    "Zootopia",
+		Genre:    "Animation",
+		Durasi:   108,
+		Penonton: 80,
+	}
+	tabFilm[3] = Film{
+		ID:       4,
+		Judul:    "Star_Wars:_The_Force_Awakens",
+		Genre:    "Sci-fi",
+		Durasi:   138,
+		Penonton: 60,
+	}
+
+	// jadwal
+	tabJadwal[0] = Jadwal{
+		ID:            1,
+		FilmID:        1,
+		WaktuTayang:   "10:00",
+		TotalKursi:    150,
+		KursiTerpesan: 120,
+	}
+	tabJadwal[1] = Jadwal{
+		ID:            2,
+		FilmID:        2,
+		WaktuTayang:   "13:00",
+		TotalKursi:    150,
+		KursiTerpesan: 100,
+	}
+	tabJadwal[2] = Jadwal{
+		ID:            3,
+		FilmID:        3,
+		WaktuTayang:   "12:00",
+		TotalKursi:    150,
+		KursiTerpesan: 80,
+	}
+	tabJadwal[3] = Jadwal{
+		ID:            4,
+		FilmID:        4,
+		WaktuTayang:   "14:20",
+		TotalKursi:    150,
+		KursiTerpesan: 60,
+	}
 }
