@@ -35,7 +35,7 @@ func main() {
 	var selesai bool = false
 
 	for !selesai {
-		fmt.Println("\n🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️")
+		fmt.Println("\n🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️🎞️")
 		fmt.Println("APLIKASI PEMESANAN TIKET BIOSKOP 🎦")
 		fmt.Println("====================================\n")
 		fmt.Println("1. Kelola Data Film 📊")
@@ -44,7 +44,8 @@ func main() {
 		fmt.Println("4. Cari Film (Judul/Genre) 🔍")
 		fmt.Println("5. Lihat Daftar Film Terurut 📋")
 		fmt.Println("0. Keluar 🏃")
-		fmt.Print("\nPilih menu: ")
+		fmt.Println("\n🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️")
+		fmt.Print("Pilih menu: ")
 		fmt.Scan(&pilihan)
 
 		if pilihan == 1 {
@@ -69,13 +70,14 @@ func main() {
 // BAGIAN A & B: KELOLA FILM & JADWAL
 func menuKelolaFilm() {
 	var pilihan int
-	fmt.Println("\n🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️")
+	fmt.Println("\n🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️")
 	fmt.Println("KELOLA DATA FILM 🎦")
 	fmt.Println("====================================\n")
 	fmt.Println("1. Tambah Film ✏️")
 	fmt.Println("2. Lihat Semua Film 🔍")
 	fmt.Println("3. Hapus Film 🧼")
-	fmt.Print("\nPilih aksi: ")
+	fmt.Println("\n🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️")
+	fmt.Print("Pilih aksi: ")
 	fmt.Scan(&pilihan)
 
 	if pilihan == 1 {
@@ -131,7 +133,7 @@ func lihatSemuaFilm() {
 	if nFilm == 0 {
 		fmt.Println("\nBelum ada data film. 😢")
 	} else {
-		fmt.Println("\n🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️")
+		fmt.Println("\n🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️")
 		fmt.Println("Daftar Film 📋:")
 		fmt.Println("====================================\n")
 		for i = 0; i < nFilm; i++ {
@@ -145,12 +147,13 @@ func menuKelolaJadwal() {
 	var pilihan int
 	var denganJadwal bool = false
 
-	fmt.Println("\n🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️")
+	fmt.Println("\n🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️")
 	fmt.Println("KELOLA JADWAL TAYANG 🎦")
 	fmt.Println("====================================\n")
 	fmt.Println("1. Tambah Jadwal ✏️")
 	fmt.Println("2. Lihat Semua Jadwal 🔍")
-	fmt.Print("\nPilih aksi: ")
+	fmt.Println("\n🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️")
+	fmt.Print("Pilih aksi: ")
 	fmt.Scan(&pilihan)
 
 	if pilihan == 1 {
@@ -191,7 +194,8 @@ func lihatSemuaJadwal() {
 	if nJadwal == 0 {
 		fmt.Println("Belum ada jadwal tayang. 😢")
 	} else {
-		fmt.Println("\nDaftar Jadwal 📋:")
+		fmt.Println("\n🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️")
+		fmt.Println("Daftar Jadwal 📋:")
 		fmt.Println("====================================\n")
 		for i = 0; i < nJadwal; i++ {
 			idxFilm = sequentialSearchDenganID(tabJadwal[i].FilmID, denganJadwal)
@@ -217,7 +221,8 @@ func pesanTiket() {
 	}
 
 	var jadwalID, jumlah int
-	fmt.Print("\nMasukkan ID Jadwal yang ingin dipesan: ")
+	fmt.Println("\n🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️")
+	fmt.Print("Masukkan ID Jadwal yang ingin dipesan: ")
 	fmt.Scan(&jadwalID)
 
 	denganJadwal = true
@@ -251,7 +256,7 @@ func pesanTiket() {
 // BAGIAN D: CARI FILM
 func cariFilm(info arrFilm, n int) {
 	if n == 0 {
-		fmt.Println("Data film masih kosong.")
+		fmt.Println("Data film masih kosong. 😢")
 		return
 	}
 
@@ -259,8 +264,8 @@ func cariFilm(info arrFilm, n int) {
 	var judul, genre string
 
 	selectionSort(&info, n)
-
-	fmt.Println("\nPENCARIAN FILM 🎦")
+	fmt.Println("\n🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️")
+	fmt.Println("PENCARIAN FILM 🎦")
 	fmt.Println("====================================\n")
 	fmt.Print("Search judul (ketik - jika kosong): ")
 	fmt.Scan(&judul)
@@ -277,7 +282,8 @@ func cariFilm(info arrFilm, n int) {
 		fmt.Scan(&genre)
 	}
 
-	fmt.Println("\nHasil Pencarian:")
+	fmt.Println("\n🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️")
+	fmt.Println("Hasil Pencarian:")
 	fmt.Println("====================================\n")
 
 	count = binarySearch(info, n, judul)
@@ -305,7 +311,8 @@ func listFilm(info *arrFilm, n int) {
 		fmt.Println("Data film masih kosong. 😢")
 		return
 	}
-	fmt.Println("\nUrutan daftar film berdasarkan jumlah penonton 📋:")
+	fmt.Println("\n🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️🎟️")
+	fmt.Println("Urutan daftar film berdasarkan jumlah penonton 📋:")
 	fmt.Println("====================================\n")
 	insertionSort(info, n)
 
